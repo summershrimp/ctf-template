@@ -1,0 +1,9 @@
+# Challenge configuration
+name: simple web
+type: web
+description: >
+        This is a single line description
+        and will fold to one line.
+flag: flag{s1mple_web_fl@g}
+image: true
+
