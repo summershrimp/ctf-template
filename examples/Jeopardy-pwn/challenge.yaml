@@ -1,0 +1,9 @@
+# Challenge configuration
+name: simple pwn
+type: pwn
+description: >
+        This is a single line description
+        and will fold to one line.
+flag: flag{s1mple_pwn_fl@g}
+image: true
+
