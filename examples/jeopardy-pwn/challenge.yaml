@@ -1,6 +1,7 @@
 # Challenge configuration
 name: simple pwn
 type: pwn
+value: 200
 description: >
         This is a single line description
         and will fold to one line.

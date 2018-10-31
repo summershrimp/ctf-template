@@ -9,7 +9,7 @@
 ```
 ctf-template/
 ├── challenges                  // 用于储存所有的赛题文件
-│   ├── challenge-short-name1   // 赛题文件夹，并以赛题短名字命名 (只能包含 /[a-zA-Z0-9_-]/.)
+│   ├── challenge-short-name1   // 赛题文件夹，并以赛题短名字命名 (只能包含 /[a-z0-9_-]/.)
 │   │   ├── challenge.yaml      // 赛题配置文件
 │   │   ├── dist                // 存放提供给选手的文件
 │   │   │   └── file
@@ -35,6 +35,7 @@ ctf-template/
 # Challenge configuration
 name: simple pwn                # 赛题名称
 type: pwn                       # 赛题类型 (web,pwn,misc,rev,mobile,crypto etc.)
+value: 500
 description: >
         这是一个yaml折行文本，
         在这一项中写赛题说明
@@ -45,3 +46,5 @@ hints:                          # 赛题提示
 image: true                     # 赛题是否包含服务端Docker镜像
 
 ```
+
+### contest.yaml

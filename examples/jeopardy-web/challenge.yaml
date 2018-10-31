@@ -1,6 +1,7 @@
 # Challenge configuration
 name: simple web
 type: web
+value: 200
 description: >
         This is a single line description
         and will fold to one line.
