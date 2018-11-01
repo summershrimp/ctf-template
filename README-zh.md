@@ -23,6 +23,7 @@ ctf-template/
 │   │       └── README.md
 │   ├── challenge-short-name2   // 另一个赛题文件夹
 .....
+|   └── short-name3             // 另一个赛题文件夹
 ├── examples                    // 样例文件夹，包括几个方便理解项目结构的示例赛题
 ├── LICENSE
 ├── contest.yaml                // (未完成) 比赛配置文件
@@ -35,7 +36,7 @@ ctf-template/
 # Challenge configuration
 name: simple pwn                # 赛题名称
 type: pwn                       # 赛题类型 (web,pwn,misc,rev,mobile,crypto etc.)
-value: 500
+value: 500                      # 赛题分值
 description: >
         这是一个yaml折行文本，
         在这一项中写赛题说明
@@ -47,4 +48,14 @@ image: true                     # 赛题是否包含服务端Docker镜像
 
 ```
 
-### contest.yaml
+### contest.yaml (暂时不可用)
+```
+# Contest configuration
+title: Asuri-CTF                  # contest title
+description: > This is a test     # contest description
+                ctf contest.
+time:                             # contest time
+    start:  2018-12-14 08:00:00 +8
+    end:    2018-12-14 22:00:00 +8
+
+```

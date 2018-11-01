@@ -26,10 +26,11 @@ def main():
         print(chal_data)
         zip_file = chal.pack_zip("dists/uploads/")
         if zip_file:
-            chal_data["files"] = [zip_file]
+            chal_data["files"] = [os.path.join("uploads", zip_file)]
         portable.append(chal_data)
     with open("dists/challenges.yaml", "w+") as f:
-        yaml.dump(portable, stream=f)
+        s =  yaml.safe_dump_all(portable, default_flow_style=False, allow_unicode=True, explicit_start=True)
+        f.write(s);
     
 
         

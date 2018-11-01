@@ -23,6 +23,7 @@ ctf-template/
 │   │       └── README.md
 │   ├── challenge-short-name2   // Another challenge.
 .....
+|   └── short-name3
 ├── examples                    // Contains some example challenge to help understand.
 ├── LICENSE
 ├── contest.yaml                // (not finished) Contest configuration file.
@@ -35,6 +36,7 @@ ctf-template/
 # Challenge configuration
 name: simple pwn                # Challenge name
 type: pwn                       # Challenge type (web,pwn,misc,rev,mobile,crypto etc.)
+value: 200
 description: >
         This is a single line description
         and will fold to one line.
