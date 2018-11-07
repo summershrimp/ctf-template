@@ -12,7 +12,8 @@ ADD src/pwn.xinetd /etc/xinetd.d/pwn
 
 # Ensure file privileges are correct
 RUN chmod 755 /home/ctf/pwn \
-    && chmod 444 /home/ctf/flag
+    && chmod 444 /home/ctf/flag \
+    && chown -R root:root /home/ctf 
 
 
 ENV CTF_PORT 20000

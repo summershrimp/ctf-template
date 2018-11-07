@@ -4,7 +4,7 @@ service pwn
     socket_type = stream
     protocol    = tcp
     wait        = no
-    user        = root
+    user        = ctf
     type        = UNLISTED
     port        = 20000
     bind        = 0.0.0.0
